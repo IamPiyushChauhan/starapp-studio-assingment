@@ -1,0 +1,159 @@
+:root {
+    --blue-color : rgb(26,172,226);
+    --pink-color: rgb(210,16,120);
+    --yellow-color: rgb(244,201,62);
+    --blue-light: rgba(135, 207, 235, 0.445);
+    --yellow-light: rgba(255, 255, 0, 0.455);
+    --pink-light: rgba(255, 192, 203, 0.318)
+}
+
+body {
+    display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+}
+.main {
+    display: flex;
+    width: 90vw;
+}
+
+.part-um-image {
+    width: 50%;
+    height: 50%;
+}
+
+.part-controller {
+    width: 50%;
+    height: 50%;
+}
+
+
+
+#umb-bg {
+    background-size:50cap;
+    padding: 3px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex; flex-direction: column-reverse;
+}
+#umb-bg img {
+    margin-left: 42%;
+    margin-bottom: 15%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.color-select {
+    display: flex;
+}
+
+
+
+.pink-btn {
+    width: 2em;
+    height: 2em;
+    background-color: var(--pink-color);
+    border-radius: 100%;
+    margin: 0.5em;
+}
+
+.pink-btn-seleted {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: var(--pink-light);
+    border-radius: 100%;
+    margin: 0.5em;
+    border: 0.4em solid var(--pink-color);
+}
+
+.blue-btn {
+    width: 2em;
+    height: 2em;
+    background-color: var(--blue-color);
+    border-radius: 100%;
+    margin: 0.5em;
+}
+
+.blue-btn-seleted {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: var(--blue-light);
+    border-radius: 100%;
+    margin: 0.5em;
+    border: 0.4em solid var(--blue-color);
+}
+
+.yellow-btn {
+    width: 2em;
+    height: 2em;
+    background-color: var(--yellow-color);
+    border-radius: 100%;
+    margin: 0.5em;
+}
+
+.yellow-btn-seleted {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: var(--yellow-light);
+    border-radius: 100%;
+    margin: 0.5em;
+    border: 0.4em solid var(--yellow-color);
+}
+
+
+#image-select-btn {
+    color: white;
+    width: 50%;
+    height: 10%;
+    display: flex;
+    padding: 0.5em;
+    justify-content: space-around;
+    margin: 0.5em;
+}
+
+#image-select-btn  p {
+    padding-top: 0%;
+}
+
+.rotate{
+    width: 200px; height: 200px;
+    margin: 200px;
+    display: none;
+}
+
+.rotate svg{
+    animation: rotate infinite 2.5s ease;
+}
+
+.rotate img {
+    width: 100%;
+    height: 100%;
+}
+
+#image-select-loading {
+    width: 50%;
+    height: 10%;
+    
+    display: none;
+}
+
+#image-select-loading svg {
+    animation: rotate infinite 2.5s ease;
+}
+
+@keyframes  rotate{
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}
